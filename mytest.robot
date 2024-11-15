@@ -16,6 +16,7 @@ test
     Set Variable
     log your QA sub team
     Member of Bugget team
+    Keywords inside each other
 
 
 
@@ -37,3 +38,12 @@ Member of ${team_name} Team
     Log    team_name=${team_name1}[0]
 
 
+Keywords inside each other
+    Test Argument    Fateme    Barati    12
+
+
+Test Argument
+    [Arguments]     ${name}    ${family}    ${age}=19
+    Log    ${name}   
+    Log    ${family}
+    Log    ${age}
