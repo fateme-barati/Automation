@@ -1,140 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.11.0 on darwin)" generated="2024-11-17T14:35:23.780749" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1 (Python 3.11.0 on darwin)" generated="2024-11-17T22:36:04.213718" rpa="false" schemaversion="5">
 <suite id="s1" name="Myrobotproject" source="/Users/snapp/Desktop/myrobotproject">
 <suite id="s1-s1" name="Mytest" source="/Users/snapp/Desktop/myrobotproject/mytest.robot">
 <kw name="Log" owner="BuiltIn" type="SETUP">
-<msg time="2024-11-17T14:35:23.794289" level="INFO">5</msg>
+<msg time="2024-11-17T22:36:04.227523" level="INFO">5</msg>
 <arg>5</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-17T14:35:23.794212" elapsed="0.000108"/>
+<status status="PASS" start="2024-11-17T22:36:04.227427" elapsed="0.000127"/>
 </kw>
 <test id="s1-s1-t1" name="test" line="12">
 <kw name="Log To Console" owner="BuiltIn" type="SETUP">
 <arg>salam</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-11-17T14:35:23.794525" elapsed="0.000061"/>
+<status status="PASS" start="2024-11-17T22:36:04.227776" elapsed="0.000107"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-11-17T14:35:23.794945" level="INFO">${a} = 6</msg>
+<msg time="2024-11-17T22:36:04.228242" level="INFO">${a} = 6</msg>
 <arg>${a}</arg>
 <arg>6</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-11-17T14:35:23.794656" elapsed="0.000309"/>
+<status status="PASS" start="2024-11-17T22:36:04.227954" elapsed="0.000306"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-11-17T14:35:23.795028" elapsed="0.000042"/>
+<status status="PASS" start="2024-11-17T22:36:04.228318" elapsed="0.000038"/>
 </kw>
 <kw name="log your QA sub team">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-17T14:35:23.795361" level="INFO">Bugget</msg>
+<msg time="2024-11-17T22:36:04.228602" level="INFO">Bugget</msg>
 <arg>${qa}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-17T14:35:23.795310" elapsed="0.000067"/>
+<status status="PASS" start="2024-11-17T22:36:04.228550" elapsed="0.000068"/>
 </kw>
 <doc>you can use this section after the keyword for Describing</doc>
-<status status="PASS" start="2024-11-17T14:35:23.795156" elapsed="0.000245"/>
+<status status="PASS" start="2024-11-17T22:36:04.228446" elapsed="0.000195"/>
 </kw>
 <kw name="Member of Bugget team" source_name="Member of ${team_name} Team">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-17T14:35:23.795636" level="INFO">team_name=Bugget</msg>
+<msg time="2024-11-17T22:36:04.228861" level="INFO">team_name=Bugget</msg>
 <arg>team_name=${team_name1}[0]</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-17T14:35:23.795568" elapsed="0.000084"/>
+<status status="PASS" start="2024-11-17T22:36:04.228796" elapsed="0.000080"/>
 </kw>
-<status status="PASS" start="2024-11-17T14:35:23.795465" elapsed="0.000213"/>
+<status status="PASS" start="2024-11-17T22:36:04.228703" elapsed="0.000197"/>
 </kw>
 <kw name="Keywords inside each other">
 <kw name="Test Argument">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-17T14:35:23.795972" level="INFO">Fateme</msg>
+<msg time="2024-11-17T22:36:04.229176" level="INFO">Fateme</msg>
 <arg>${name}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-17T14:35:23.795929" elapsed="0.000058"/>
+<status status="PASS" start="2024-11-17T22:36:04.229134" elapsed="0.000056"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-17T14:35:23.796073" level="INFO">Barati</msg>
+<msg time="2024-11-17T22:36:04.229267" level="INFO">Barati</msg>
 <arg>${family}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-17T14:35:23.796028" elapsed="0.000060"/>
+<status status="PASS" start="2024-11-17T22:36:04.229227" elapsed="0.000054"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-17T14:35:23.796163" level="INFO">12</msg>
+<msg time="2024-11-17T22:36:04.229353" level="INFO">12</msg>
 <arg>${age}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-17T14:35:23.796123" elapsed="0.000053"/>
+<status status="PASS" start="2024-11-17T22:36:04.229312" elapsed="0.000054"/>
 </kw>
 <arg>Fateme</arg>
 <arg>Barati</arg>
 <arg>12</arg>
-<status status="PASS" start="2024-11-17T14:35:23.795826" elapsed="0.000369"/>
+<status status="PASS" start="2024-11-17T22:36:04.229041" elapsed="0.000343"/>
 </kw>
-<status status="PASS" start="2024-11-17T14:35:23.795737" elapsed="0.000477"/>
+<status status="PASS" start="2024-11-17T22:36:04.228957" elapsed="0.000445"/>
 </kw>
 <doc>just for this test case</doc>
 <tag>1234</tag>
 <tag>example1</tag>
 <tag>example2</tag>
-<status status="PASS" start="2024-11-17T14:35:23.794379" elapsed="0.001880"/>
+<status status="PASS" start="2024-11-17T22:36:04.227619" elapsed="0.001830"/>
 </test>
 <test id="s1-s1-t2" name="test1" line="22">
 <kw name="Log To Console" owner="BuiltIn" type="SETUP">
 <arg>salam</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-11-17T14:35:23.796443" elapsed="0.000043"/>
+<status status="PASS" start="2024-11-17T22:36:04.229617" elapsed="0.000041"/>
 </kw>
 <if>
 <branch type="IF" condition="'${condition}'=='salam'">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-17T14:35:23.796649" level="INFO">Farsi</msg>
+<msg time="2024-11-17T22:36:04.229811" level="INFO">Farsi</msg>
 <arg>Farsi</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-17T14:35:23.796614" elapsed="0.000050"/>
+<status status="PASS" start="2024-11-17T22:36:04.229780" elapsed="0.000044"/>
 </kw>
-<status status="PASS" start="2024-11-17T14:35:23.796539" elapsed="0.000136"/>
+<status status="PASS" start="2024-11-17T22:36:04.229708" elapsed="0.000127"/>
 </branch>
 <branch type="ELSE IF" condition="'${condition}'=='hi'">
 <kw name="Log" owner="BuiltIn">
 <arg>english</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-11-17T14:35:23.796720" elapsed="0.000006"/>
+<status status="NOT RUN" start="2024-11-17T22:36:04.229879" elapsed="0.000006"/>
 </kw>
-<status status="NOT RUN" start="2024-11-17T14:35:23.796686" elapsed="0.000050"/>
+<status status="NOT RUN" start="2024-11-17T22:36:04.229847" elapsed="0.000048"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log" owner="BuiltIn">
 <arg>unknown</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-11-17T14:35:23.796775" elapsed="0.000006"/>
+<status status="NOT RUN" start="2024-11-17T22:36:04.229930" elapsed="0.000005"/>
 </kw>
-<status status="NOT RUN" start="2024-11-17T14:35:23.796745" elapsed="0.000046"/>
+<status status="NOT RUN" start="2024-11-17T22:36:04.229903" elapsed="0.000042"/>
 </branch>
-<status status="PASS" start="2024-11-17T14:35:23.796526" elapsed="0.000272"/>
+<status status="PASS" start="2024-11-17T22:36:04.229695" elapsed="0.000257"/>
 </if>
 <tag>example1</tag>
 <tag>example2</tag>
-<status status="PASS" start="2024-11-17T14:35:23.796344" elapsed="0.000505"/>
+<status status="PASS" start="2024-11-17T22:36:04.229526" elapsed="0.000469"/>
+</test>
+<test id="s1-s1-t3" name="test2" line="32">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>salam</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-17T22:36:04.230146" elapsed="0.000040"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-17T22:36:04.230333" level="INFO">a</msg>
+<arg>${item}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-17T22:36:04.230296" elapsed="0.000050"/>
+</kw>
+<var name="${item}">a</var>
+<status status="PASS" start="2024-11-17T22:36:04.230269" elapsed="0.000087"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-17T22:36:04.230446" level="INFO">b</msg>
+<arg>${item}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-17T22:36:04.230410" elapsed="0.000047"/>
+</kw>
+<var name="${item}">b</var>
+<status status="PASS" start="2024-11-17T22:36:04.230386" elapsed="0.000081"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-17T22:36:04.230555" level="INFO">c</msg>
+<arg>${item}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-17T22:36:04.230520" elapsed="0.000048"/>
+</kw>
+<var name="${item}">c</var>
+<status status="PASS" start="2024-11-17T22:36:04.230491" elapsed="0.000087"/>
+</iter>
+<var>${item}</var>
+<value>@{my_list}</value>
+<status status="PASS" start="2024-11-17T22:36:04.230220" elapsed="0.000367"/>
+</for>
+<tag>example1</tag>
+<tag>example2</tag>
+<status status="PASS" start="2024-11-17T22:36:04.230061" elapsed="0.000567"/>
 </test>
 <doc>this file is just for practicing</doc>
-<status status="PASS" start="2024-11-17T14:35:23.790205" elapsed="0.006789"/>
+<status status="PASS" start="2024-11-17T22:36:04.222984" elapsed="0.007775"/>
 </suite>
-<status status="PASS" start="2024-11-17T14:35:23.781283" elapsed="0.015899"/>
+<status status="PASS" start="2024-11-17T22:36:04.214339" elapsed="0.016593"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="1" fail="0" skip="0">1234</stat>
-<stat pass="2" fail="0" skip="0">example1</stat>
-<stat pass="2" fail="0" skip="0">example2</stat>
+<stat pass="3" fail="0" skip="0">example1</stat>
+<stat pass="3" fail="0" skip="0">example2</stat>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Myrobotproject">Myrobotproject</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1" name="Mytest">Myrobotproject.Mytest</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="Myrobotproject">Myrobotproject</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Mytest">Myrobotproject.Mytest</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-11-17T14:35:23.791183" level="WARN">Imported resource file '/Users/snapp/Desktop/myrobotproject/common.resource' is empty.</msg>
+<msg time="2024-11-17T22:36:04.223984" level="WARN">Imported resource file '/Users/snapp/Desktop/myrobotproject/common.resource' is empty.</msg>
 </errors>
 </robot>

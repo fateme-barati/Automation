@@ -28,6 +28,13 @@ test1
         Log    unknown
     END
 
+
+test2
+    FOR      ${item}    IN    @{my_list}
+        Log  ${item}
+    END
+
+
 *** Variables ***
 ${name}        Fatemeh
 @{my_list}     a    b     c
