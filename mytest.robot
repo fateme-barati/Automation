@@ -19,12 +19,21 @@ test
     Keywords inside each other
 
 
+test1
+    IF        '${condition}'=='salam'
+        Log    Farsi
+    ELSE IF   '${condition}'=='hi'
+        Log    english
+    ELSE
+        Log    unknown
+    END
 
 *** Variables ***
 ${name}        Fatemeh
 @{my_list}     a    b     c
 @{team_name1}    Bugget    Roze
 &{Dict}        name=Ali    age=35    color=yellow
+${condition}    salam
 
 
 

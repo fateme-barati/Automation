@@ -1,102 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.11.0 on darwin)" generated="2024-11-15T17:40:14.564800" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1 (Python 3.11.0 on darwin)" generated="2024-11-17T14:35:23.780749" rpa="false" schemaversion="5">
 <suite id="s1" name="Myrobotproject" source="/Users/snapp/Desktop/myrobotproject">
 <suite id="s1-s1" name="Mytest" source="/Users/snapp/Desktop/myrobotproject/mytest.robot">
 <kw name="Log" owner="BuiltIn" type="SETUP">
-<msg time="2024-11-15T17:40:14.576995" level="INFO">5</msg>
+<msg time="2024-11-17T14:35:23.794289" level="INFO">5</msg>
 <arg>5</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-15T17:40:14.576923" elapsed="0.000100"/>
+<status status="PASS" start="2024-11-17T14:35:23.794212" elapsed="0.000108"/>
 </kw>
 <test id="s1-s1-t1" name="test" line="12">
 <kw name="Log To Console" owner="BuiltIn" type="SETUP">
 <arg>salam</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-11-15T17:40:14.577223" elapsed="0.000063"/>
+<status status="PASS" start="2024-11-17T14:35:23.794525" elapsed="0.000061"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-11-15T17:40:14.577628" level="INFO">${a} = 6</msg>
+<msg time="2024-11-17T14:35:23.794945" level="INFO">${a} = 6</msg>
 <arg>${a}</arg>
 <arg>6</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-11-15T17:40:14.577349" elapsed="0.000300"/>
+<status status="PASS" start="2024-11-17T14:35:23.794656" elapsed="0.000309"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-11-15T17:40:14.577714" elapsed="0.000039"/>
+<status status="PASS" start="2024-11-17T14:35:23.795028" elapsed="0.000042"/>
 </kw>
 <kw name="log your QA sub team">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-15T17:40:14.578021" level="INFO">Bugget</msg>
+<msg time="2024-11-17T14:35:23.795361" level="INFO">Bugget</msg>
 <arg>${qa}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-15T17:40:14.577972" elapsed="0.000066"/>
+<status status="PASS" start="2024-11-17T14:35:23.795310" elapsed="0.000067"/>
 </kw>
 <doc>you can use this section after the keyword for Describing</doc>
-<status status="PASS" start="2024-11-15T17:40:14.577873" elapsed="0.000187"/>
+<status status="PASS" start="2024-11-17T14:35:23.795156" elapsed="0.000245"/>
 </kw>
 <kw name="Member of Bugget team" source_name="Member of ${team_name} Team">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-15T17:40:14.578276" level="INFO">team_name=Bugget</msg>
+<msg time="2024-11-17T14:35:23.795636" level="INFO">team_name=Bugget</msg>
 <arg>team_name=${team_name1}[0]</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-15T17:40:14.578211" elapsed="0.000080"/>
+<status status="PASS" start="2024-11-17T14:35:23.795568" elapsed="0.000084"/>
 </kw>
-<status status="PASS" start="2024-11-15T17:40:14.578118" elapsed="0.000198"/>
+<status status="PASS" start="2024-11-17T14:35:23.795465" elapsed="0.000213"/>
 </kw>
 <kw name="Keywords inside each other">
 <kw name="Test Argument">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-15T17:40:14.578598" level="INFO">Fateme</msg>
+<msg time="2024-11-17T14:35:23.795972" level="INFO">Fateme</msg>
 <arg>${name}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-15T17:40:14.578554" elapsed="0.000058"/>
+<status status="PASS" start="2024-11-17T14:35:23.795929" elapsed="0.000058"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-15T17:40:14.578696" level="INFO">Barati</msg>
+<msg time="2024-11-17T14:35:23.796073" level="INFO">Barati</msg>
 <arg>${family}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-15T17:40:14.578653" elapsed="0.000059"/>
+<status status="PASS" start="2024-11-17T14:35:23.796028" elapsed="0.000060"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-15T17:40:14.578780" level="INFO">12</msg>
+<msg time="2024-11-17T14:35:23.796163" level="INFO">12</msg>
 <arg>${age}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-15T17:40:14.578743" elapsed="0.000050"/>
+<status status="PASS" start="2024-11-17T14:35:23.796123" elapsed="0.000053"/>
 </kw>
 <arg>Fateme</arg>
 <arg>Barati</arg>
 <arg>12</arg>
-<status status="PASS" start="2024-11-15T17:40:14.578460" elapsed="0.000350"/>
+<status status="PASS" start="2024-11-17T14:35:23.795826" elapsed="0.000369"/>
 </kw>
-<status status="PASS" start="2024-11-15T17:40:14.578378" elapsed="0.000453"/>
+<status status="PASS" start="2024-11-17T14:35:23.795737" elapsed="0.000477"/>
 </kw>
 <doc>just for this test case</doc>
 <tag>1234</tag>
 <tag>example1</tag>
 <tag>example2</tag>
-<status status="PASS" start="2024-11-15T17:40:14.577080" elapsed="0.001797"/>
+<status status="PASS" start="2024-11-17T14:35:23.794379" elapsed="0.001880"/>
+</test>
+<test id="s1-s1-t2" name="test1" line="22">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>salam</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-17T14:35:23.796443" elapsed="0.000043"/>
+</kw>
+<if>
+<branch type="IF" condition="'${condition}'=='salam'">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-17T14:35:23.796649" level="INFO">Farsi</msg>
+<arg>Farsi</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-17T14:35:23.796614" elapsed="0.000050"/>
+</kw>
+<status status="PASS" start="2024-11-17T14:35:23.796539" elapsed="0.000136"/>
+</branch>
+<branch type="ELSE IF" condition="'${condition}'=='hi'">
+<kw name="Log" owner="BuiltIn">
+<arg>english</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-11-17T14:35:23.796720" elapsed="0.000006"/>
+</kw>
+<status status="NOT RUN" start="2024-11-17T14:35:23.796686" elapsed="0.000050"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>unknown</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-11-17T14:35:23.796775" elapsed="0.000006"/>
+</kw>
+<status status="NOT RUN" start="2024-11-17T14:35:23.796745" elapsed="0.000046"/>
+</branch>
+<status status="PASS" start="2024-11-17T14:35:23.796526" elapsed="0.000272"/>
+</if>
+<tag>example1</tag>
+<tag>example2</tag>
+<status status="PASS" start="2024-11-17T14:35:23.796344" elapsed="0.000505"/>
 </test>
 <doc>this file is just for practicing</doc>
-<status status="PASS" start="2024-11-15T17:40:14.573505" elapsed="0.005511"/>
+<status status="PASS" start="2024-11-17T14:35:23.790205" elapsed="0.006789"/>
 </suite>
-<status status="PASS" start="2024-11-15T17:40:14.565456" elapsed="0.013732"/>
+<status status="PASS" start="2024-11-17T14:35:23.781283" elapsed="0.015899"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="1" fail="0" skip="0">1234</stat>
-<stat pass="1" fail="0" skip="0">example1</stat>
-<stat pass="1" fail="0" skip="0">example2</stat>
+<stat pass="2" fail="0" skip="0">example1</stat>
+<stat pass="2" fail="0" skip="0">example2</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Myrobotproject">Myrobotproject</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Mytest">Myrobotproject.Mytest</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Myrobotproject">Myrobotproject</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Mytest">Myrobotproject.Mytest</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-11-15T17:40:14.574101" level="WARN">Imported resource file '/Users/snapp/Desktop/myrobotproject/common.resource' is empty.</msg>
+<msg time="2024-11-17T14:35:23.791183" level="WARN">Imported resource file '/Users/snapp/Desktop/myrobotproject/common.resource' is empty.</msg>
 </errors>
 </robot>
